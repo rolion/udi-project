@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Transcripción de Audio con Azure Whisper</h1>
+  <input type="file" (change)="onFileSelected($event)" accept="audio/*" />
+  <div *ngIf="isLoading">Procesando audio...</div>
+  <div *ngIf="transcribedText">
+    <h2>Texto transcrito:</h2>
+    <p>{{ transcribedText }}</p>
+  </div>
+</div>

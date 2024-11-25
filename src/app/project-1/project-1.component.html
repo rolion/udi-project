@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Cell Biology</h1>
+  <h2>Practice Quiz</h2>
+  <div class="row">
+    <app-qna *ngFor="let question of questions"
+      [question]="question"
+    ></app-qna>
+  </div>
+</div>

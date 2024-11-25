@@ -1,0 +1,19 @@
+<div class="row">
+  <p>{{question}}</p>
+
+
+<div class="input-group mb-3">
+  <textarea type="text" ></textarea>
+  <button class="btn btn-outline-secondary" (click)="getResponse()">send</button>
+</div>
+<div class="row">
+  <div class="response" *ngIf="showResponse">
+    {{shortReponse}}
+    {{longResponse}}
+  </div>
+</div>
+
+<div class="row" *ngIf="showResponse">
+  {{longResponse}}
+</div>
+</div>
