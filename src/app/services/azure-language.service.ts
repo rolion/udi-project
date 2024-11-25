@@ -9,8 +9,9 @@ import { environment } from '../../environments/environment.development';
 export class AzureLanguageService {
 
   // private apiUrl = 'https://langserviceol.cognitiveservices.azure.com/';
-  private apiUrl = environment.azureLanguageApiUrl//'https://langserviceol.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=udi-class-question&api-version=2021-10-01&deploymentName=production'
-  private apiKey = environment.azureLanguageApiKey//'7M3EalIY3KhODvujpHwovNHt4RwEC2TJBszYzY7IDfsp2uApOenbJQQJ99AKACHYHv6XJ3w3AAAaACOGBOGb';
+  private apiUrl = environment.azureLanguageApiUrl
+  private apiKey = environment.azureLanguageApiKey
+
 
   constructor(private http: HttpClient) {}
 

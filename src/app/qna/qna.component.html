@@ -1,5 +1,5 @@
 <div class="row">
-  <p>{{question}}</p>
+  <h4>{{question}}</h4>
 
 
 <div class="input-group mb-3">
@@ -8,12 +8,15 @@
 </div>
 <div class="row">
   <div class="response" *ngIf="showResponse">
-    {{shortReponse}}
-    {{longResponse}}
+    <h5>ShortAnswer</h5>
+    <div class="">{{shortReponse}}</div>
+
   </div>
 </div>
 
-<div class="row" *ngIf="showResponse">
-  {{longResponse}}
+<div class="response" *ngIf="showResponse">
+  <h5>LongAnswer</h5>
+  <div>{{longResponse}}</div>
+
 </div>
 </div>

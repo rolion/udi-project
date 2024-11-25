@@ -16,8 +16,8 @@ const app = express();
 const upload = multer({ dest: appDir+'/uploads/' });
 const PORT = 3000;
 
-const AZURE_API_KEY = process.env.AZURE_API_KEY ;//'31R6Zh402MoDhGAinJQu2UwXFs13Z7nv3JCRbdtzfJwYVH8eW2vJJQQJ99AKAChHRaEXJ3w3AAAAACOGCFsn';
-const AZURE_ENDPOINT = process.env.AZURE_ENDPOINT;//'https://63497-m3wlqg9y-norwayeast.cognitiveservices.azure.com/openai/deployments/whisper/audio/translations?api-version=2024-06-01';
+const AZURE_API_KEY = process.env.AZURE_API_KEY ;
+const AZURE_ENDPOINT = process.env.AZURE_ENDPOINT;
 
 app.use(cors());
 app.use(express.json());
